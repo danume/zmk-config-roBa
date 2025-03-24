@@ -38,11 +38,18 @@
     };
 
     macros {
-        pass: to_layer_0 {
+        text_p: to_layer_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N &kp Q &kp LS(A) &kp LS(J) &kp U &kp N6 &kp N8 &kp Q>;
             label = "TO_LAYER_0";
+        };
+
+        gmail: gmail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "GMAIL";
         };
     };
 
@@ -50,7 +57,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&pass>;
+            bindings = <&mo>, <&text_p>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -62,10 +69,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W         &kp E         &kp R  &kp T                                                  &kp Y              &kp U  &lt 6 I  &kp O      &kp P
-&kp A                  &kp S         &kp D         &kp F  &kp G        &kp LS(LG(ESCAPE))      &kp MINUS         &kp H              &kp J  &kp K    &kp L      &kp BACKSPACE
-&mt LEFT_SHIFT PERIOD  &kp Z         &kp X         &kp C  &kp V        &kp TAB                 &kp UNDERSCORE    &kp B              &kp N  &kp M    &kp SLASH  &kp ENTER
-&mt LCTRL COMMA        &kp LEFT_ALT  &kp LEFT_WIN  &kp A  &lt 3 SPACE  &kp AT                  &lt 2 LEFT_ARROW  &lt 1 RIGHT_ARROW                             &kp RIGHT_SHIFT
+&kp Q                  &kp W         &kp E         &kp R                    &kp T                                                  &kp Y              &kp U  &lt 6 I  &kp O      &kp P
+&kp A                  &kp S         &kp D         &kp F                    &kp G        &kp LS(LG(ESCAPE))      &kp MINUS         &kp H              &kp J  &kp K    &kp L      &kp BACKSPACE
+&mt LEFT_SHIFT PERIOD  &kp Z         &kp X         &kp C                    &kp V        &kp TAB                 &kp UNDERSCORE    &kp B              &kp N  &kp M    &kp SLASH  &kp ENTER
+&mt LCTRL COMMA        &kp LEFT_ALT  &kp LEFT_WIN  &kp LANG_ZENKAKUHANKAKU  &lt 3 SPACE  &kp DOUBLE_QUOTES       &lt 2 LEFT_ARROW  &lt 1 RIGHT_ARROW                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -75,7 +82,7 @@
             bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                           &kp N7        &kp N8        &kp N9        &kp PLUS      &kp MINUS
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &kp COLON   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp SLASH
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0        &mt ENTER RSHIFT
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0        &mt RIGHT_SHIFT ENTER
 &trans          &trans                  &trans          &trans                   &trans   &trans      &kp LG(L)   &trans                                                  &kp EQUAL
             >;
 
@@ -84,10 +91,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp F7  &kp F8  &kp F9  &kp F12  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &pass                            &trans
+&trans  &trans  &trans  &trans  &trans                      &kp F7   &kp F8  &kp F9  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F4   &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &gmail  &kp F1   &kp F2  &kp F3  &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &text_p                           &trans
             >;
         };
 
