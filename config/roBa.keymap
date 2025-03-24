@@ -69,10 +69,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W         &kp E         &kp R      &kp T                                                  &kp Y              &kp U  &lt 6 I  &kp O      &kp P
-&kp A                  &kp S         &kp D         &kp F      &kp G        &kp LS(LG(ESCAPE))      &kp MINUS         &kp H              &kp J  &kp K    &kp L      &kp BACKSPACE
-&mt LEFT_SHIFT PERIOD  &kp Z         &kp X         &kp C      &kp V        &kp TAB                 &kp LS(MINUS)    &kp B              &kp N  &kp M    &kp SLASH  &kp ENTER
-&mt LCTRL COMMA        &kp LEFT_ALT  &kp LEFT_WIN  &kp LS(N7)  &lt 3 SPACE  &kp RBKT        &lt 2 LEFT_ARROW  &lt 1 RIGHT_ARROW                             &kp RIGHT_SHIFT
+&kp Q                  &kp W         &kp E         &kp R                        &kp T                                                  &kp Y              &kp U  &lt 6 I  &kp O      &kp P
+&kp A                  &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(ESCAPE))      &kp MINUS         &kp H              &kp J  &kp K    &kp L      &kp BACKSPACE
+&mt LEFT_SHIFT PERIOD  &kp Z         &kp X         &kp C                        &kp V        &kp TAB                 &kp UNDERSCORE    &kp B              &kp N  &kp M    &kp SLASH  &kp ENTER
+&mt LCTRL COMMA        &kp LEFT_ALT  &kp LEFT_WIN  &kp LS(LANG_ZENKAKUHANKAKU)  &lt 3 SPACE  &kp AT_SIGN             &lt 2 LEFT_ARROW  &lt 1 RIGHT_ARROW                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -80,10 +80,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                           &kp N7        &kp N8        &kp N9        &kp LS(EQUAL)      &kp MINUS
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &kp COLON   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(N8)  &kp SLASH
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0        &mt RIGHT_SHIFT ENTER
-&trans          &trans                  &trans          &trans                   &trans   &trans      &kp LG(L)   &trans                                                  &kp EQUAL
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                           &kp N7        &kp N8        &kp N9        &kp LS(EQUAL)  &kp MINUS
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &kp COLON   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(N8)     &kp SLASH
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0         &mt RIGHT_SHIFT ENTER
+&trans          &trans                  &trans          &trans                   &trans   &trans      &kp LG(L)   &trans                                                   &kp EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PAGE_UP)>;
@@ -100,10 +100,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(EQUAL)                                                   &kp LS(N6)         &kp LS(N6)      &kp LS(LS(N7))       &kp LS(N8)  &kp LS(N9)
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(N8)  &kp LC(LA(KP_NUMBER_0))      &kp LS(MINUS)  &kp EXCLAMATION   &kp RBKT        &kp LS(N3)        &kp LS(N4)            &kp LS(N5)
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &kp INT_YEN     &kp RBKT  &kp BSLH  &kp LS(RBKT)  &kp LS(BSLH)       &kp NUHS
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp LS(NUHS)
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(EQUAL)                                              &kp LS(N6)       &kp LS(N6)  &kp LS(LS(N7))  &kp LS(N8)    &kp LS(N9)
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(N8)     &kp LC(LA(KP_NUMBER_0))      &kp LS(MINUS)  &kp EXCLAMATION  &kp RBKT    &kp LS(N3)      &kp LS(N4)    &kp LS(N5)
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD     &kp EQUAL                    &kp INT_YEN    &kp RBKT         &kp BSLH    &kp LS(RBKT)    &kp LS(BSLH)  &kp NUHS
+&trans                      &trans           &trans           &trans           &trans         &trans                       &trans         &trans                                                     &kp LS(NUHS)
             >;
         };
 
