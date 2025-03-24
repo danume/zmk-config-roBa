@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W         &kp E         &kp R                        &kp T                                                        &kp Y              &kp U  &lt 6 I  &kp O      &kp P
-&kp A                  &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                 &kp MINUS         &kp H              &kp J  &kp K    &kp L      &kp BACKSPACE
-&mt LEFT_SHIFT PERIOD  &kp Z         &kp X         &kp C                        &kp V        &kp COLON                     &kp SEMICOLON     &kp B              &kp N  &kp M    &kp SLASH  &kp ENTER
-&mt LCTRL COMMA        &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 6 LANGUAGE_5  &lt 3 SPACE  &lt_to_layer_0 1 AT_SIGN      &lt 2 LEFT_ARROW  &lt 1 RIGHT_ARROW                             &kp DEL
+&kp Q                  &kp W         &kp E         &kp R           &kp T                                             &kp Y              &kp U  &lt 6 I  &kp O      &kp P
+&kp A                  &kp S         &kp D         &kp F           &kp G        &kp LS(LG(S))      &kp MINUS         &kp H              &kp J  &kp K    &kp L      &kp BACKSPACE
+&mt LEFT_SHIFT PERIOD  &kp Z         &kp X         &kp C           &kp V        &kp COLON          &kp SEMICOLON     &kp B              &kp N  &kp M    &kp SLASH  &kp ENTER
+&mt LCTRL COMMA        &kp LEFT_ALT  &kp LEFT_WIN  &kp LANGUAGE_5  &lt 3 SPACE  &kp AT_SIGN        &lt 2 LEFT_ARROW  &lt 1 RIGHT_ARROW                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -108,7 +108,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                 &trans      &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_UP    &trans      &mkp MB1  &mkp MB3  &mkp MB3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_UP    &trans      &mkp MB1  &mkp MB3  &to 5     &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN  &trans      &mkp MB4  &mkp MB5  &mkp MB1  &mkp MB2
 &trans  &trans  &trans  &trans  &trans  &trans      &kp RS(RG(A))      &kp K_MUTE                                &kp RC(C)
             >;
