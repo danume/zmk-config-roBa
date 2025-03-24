@@ -100,9 +100,9 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp LS(GRAVE)       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp NUHS_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp NUHS  &kp NUHS  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)       &kp NUHS
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(EQUAL)                                                   &kp LS(N6)         &kp LS(N6)      &kp LS(LS(N7))       &kp LS(N8)  &kp LS(N9)
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(N8)  &kp LC(LA(KP_NUMBER_0))      &kp LS(MINUS)  &kp EXCLAMATION   &kp RBKT        &kp LS(N3)        &kp LS(N4)            &kp LS(N5)
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp RBKT  &kp BSLH  &kp LS(RBKT)  &kp LS(BSLH)       &kp NUHS
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp LS(NUHS)
             >;
         };
