@@ -69,10 +69,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W         &kp E         &kp R      &kp T                                                  &kp Y              &kp U  &lt 6 I  &kp O      &kp P
-&kp A                  &kp S         &kp D         &kp F      &kp G        &kp LS(LG(ESCAPE))      &kp MINUS         &kp H              &kp J  &kp K    &kp L      &kp BACKSPACE
-&mt LEFT_SHIFT PERIOD  &kp Z         &kp X         &kp C      &kp V        &kp TAB                 &kp LS(MINUS)     &kp B              &kp N  &kp M    &kp SLASH  &kp ENTER
-&mt LCTRL COMMA        &kp LEFT_ALT  &kp LEFT_WIN  &kp GRAVE  &lt 3 SPACE  &kp LEFT_BRACKET        &lt 2 LEFT_ARROW  &lt 1 RIGHT_ARROW                             &kp PRINTSCREEN
+&kp Q                  &kp W         &kp E         &kp R      &kp T                                                 &kp Y        &kp U  &lt 6 I  &kp O  &kp P
+&kp A                  &kp S         &kp D         &kp F      &kp G        &kp LS(LG(ESCAPE))      &kp MINUS        &kp H        &kp J  &kp K    &kp L  &kp BACKSPACE
+&mt LEFT_SHIFT PERIOD  &kp Z         &kp X         &kp C      &kp V        &kp TAB                 &kp LS(MINUS)    &kp B        &kp N  &kp M    &kp P  &kp ENTER
+&mt LCTRL COMMA        &kp LEFT_ALT  &kp LEFT_WIN  &kp GRAVE  &lt 3 SPACE  &kp LEFT_BRACKET        &lt 2 BACKSPACE  &lt 1 ENTER                         &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -112,7 +112,7 @@
 &trans  &trans  &trans  &trans  &trans                                 &trans      &trans    &trans    &trans       &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_UP    &trans      &mkp MB1  &mkp MB3  &lt 5 SPACE  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN  &trans      &mkp MB4  &mkp MB5  &mkp MB1     &mkp MB2
-&trans  &trans  &trans  &trans  &trans  &trans      &kp RS(RG(A))      &kp K_MUTE                                   &kp RC(C)
+&trans  &trans  &trans  &trans  &trans  &trans      &mkp MB2           &kp K_MUTE                                   &kp RC(C)
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
