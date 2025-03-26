@@ -111,7 +111,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                 &trans      &trans    &trans    &trans       &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_UP    &trans      &mkp MB1  &mkp MB3  &lt 5 SPACE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN  &trans      &mkp MB4  &mkp MB5  &mkp MB1     &mkp MB2
+&trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN  &mkp MB4    &mkp MB5  &mkp MB1  &mkp MB2     &mkp MB2
 &trans  &trans  &trans  &trans  &trans  &trans      &mkp MB2           &kp K_MUTE                                   &kp RC(C)
             >;
 
