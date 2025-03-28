@@ -110,7 +110,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                 &trans         &trans    &trans    &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_UP    &kp LS(LG(S))  &mkp MB1  &mkp MB3  &lt 5 SPACE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_UP    &kp LS(LG(S))  &mkp MB1  &trans    &lt 5 SPACE  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN  &mkp MB4       &mkp MB5  &mkp MB1  &mkp MB2     &mkp MB2
 &trans  &trans  &trans  &trans  &trans  &trans      &trans             &trans                                          &kp RC(C)
             >;
@@ -120,10 +120,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
 
