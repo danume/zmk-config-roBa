@@ -112,7 +112,7 @@
 &trans  &trans  &trans  &trans  &trans                                 &trans         &trans    &trans    &trans       &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_UP    &kp LS(LG(S))  &mkp MB1  &mkp MB3  &lt 5 SPACE  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN  &mkp MB4       &mkp MB5  &mkp MB1  &mkp MB2     &mkp MB2
-&trans  &trans  &trans  &trans  &trans  &trans      &trans             &kp K_MUTE                                      &kp RC(C)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans             &trans                                          &kp RC(C)
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
