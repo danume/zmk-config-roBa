@@ -107,7 +107,7 @@
             >;
         };
 
-        M {
+        mouss {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                 &trans         &trans    &trans    &trans       &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_UP    &kp LS(LG(S))  &mkp MB1  &trans    &lt 5 SPACE  &trans
