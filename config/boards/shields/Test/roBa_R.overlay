@@ -14,7 +14,7 @@
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             ;
 };
-/ {
+{
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
@@ -61,7 +61,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        mautomouse-layer = <4>;
+        //mautomouse-layer = <4>;
         scroll-layers = <5>;
     };
 };
